@@ -20,7 +20,7 @@ function generatePassword () {
 
     console.log(password);
     // declare variable to hold password length and prompt for how long they want it to be
-    var passwordLength = window.prompt("How long do you want password to be?");
+    var passwordLength = window.prompt("Choose password length between 8 and 128 characters.");
 
     // make sure the value entered is a number if not they will be prompted again
     while (isNaN(passwordLength)) {
@@ -46,35 +46,36 @@ function generatePassword () {
         yesUppercase = window.confirm("Do you want uppercase letters?");
         yesNumbers = window.confirm("Do you want numbers?");
         yesSymbols = window.confirm("Do you want symbols?");
+    }
+
+    // Create a variable to help create the password to the users preferences
+    var possibleChar = ""
+
+    // If statements to store if the user selected yes or no
+    if (yesLowercase) {
+        possibleChar += alphaLower 
+    }
+
+    if (yesUppercase) {
+        possibleChar += alphaUpper
+    }
+
+    if (yesNumbers) {
+        possibleChar += numbers
+    }
+
+    if (yesSymbols) {
+        possibleChar += symbols
+    }
+
+    //Where the random character selection magic is happening 
+    for (var i = 0; i < passwordLength; i++) {
+        password += possibleChar[Math.floor(Math.random()* possibleChar.length)]
+    }
+    console.log(password);
+    return password;
 }
 
-// Create a variable to help create the password to the users preferences
-var possibleChar = ""
-
-// If statements to store if the user selected yes or no
-if (yesLowercase) {
-    possibleChar += alphaLower 
-}
-
-if (yesUppercase) {
-    possibleChar += alphaUpper
-}
-
-if (yesNumbers) {
-    possibleChar += numbers
-}
-
-if (yesSymbols) {
-    possibleChar += symbols
-}
-
-//Where the random character selection magic is happening 
-for (var i = 0; i < passwordLength; i++) {
-    password += possibleChar[Math.floor(Math.random()* possibleChar.length)]
-}
-console.log(password);
-return password;
-}
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
