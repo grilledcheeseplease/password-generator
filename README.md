@@ -12,7 +12,7 @@ This is a random password generator that will allow you to choose some perameter
 Though you can make some selections there are a few requirements such as password length and you must choose at least one special character. 
 
 ## Visuals
-![Portfolio](./images/03-javascript-homework-demo.png)
+![Password Generator](./images/03-javascript-homework-demo.png)
 
 ## Resources
 - [Live Site](https://grilledcheeseplease.github.io/password-generator/)
