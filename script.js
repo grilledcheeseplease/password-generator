@@ -69,7 +69,7 @@ function generatePassword () {
         possibleChar += symbols
     }
 
-    //Where the random character selection magic is happening 
+    // Where the random character selection magic is happening! For loop with the condition of i equaling 0 and as long as i is less than the password length i will increment by one. With the process of the random character selection to select a character until it meets the chosen length and then apply it to the empty password variable and then return the password value to the user.
     for (var i = 0; i < passwordLength; i++) {
         password += possibleChar[Math.floor(Math.random()* possibleChar.length)]
     }
