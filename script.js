@@ -49,7 +49,7 @@ function generatePassword () {
         yesSymbols = window.confirm("Do you want symbols?");
     }
 
-    // Create a variable to hold the users character choices so it can be referenced while password is being generated
+    // Create a variable to hold the users character choice values so it can be referenced while password is being generated
     var possibleChar = ""
 
     // If statements to store if the user selected yes or no
