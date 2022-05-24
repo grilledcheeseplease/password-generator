@@ -9,7 +9,7 @@ function generatePassword () {
     var numbers = "0123456789";
     var symbols = "!@#$%^&*_+=";
 
-    //checking they run
+    //checking that they run
     console.log(alphaLower);
     console.log(alphaUpper);
     console.log(numbers);
