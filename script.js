@@ -19,6 +19,7 @@ function generatePassword () {
     var password = "";
 
     console.log(password);
+
     // declare variable to hold password length and prompt for how long they want it to be
     var passwordLength = window.prompt("Choose password length between 8 and 128 characters.");
 
@@ -48,7 +49,7 @@ function generatePassword () {
         yesSymbols = window.confirm("Do you want symbols?");
     }
 
-    // Create a variable to help create the password to the users preferences
+    // Create a variable to hold the users character choices so it can be referenced while password is being generated
     var possibleChar = ""
 
     // If statements to store if the user selected yes or no
