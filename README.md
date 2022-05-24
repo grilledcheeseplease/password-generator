@@ -1,4 +1,4 @@
-# password-generator
+# Password Generator
 
 ## Table of Contents 
 - [Description](#description)
@@ -13,15 +13,17 @@ Though you can make some selections there are a few requirements such as passwor
 
 Once you have made it through the prompts, your fresh randomly generated password will be displayed on the screen.
 
-- [Click to return to Table of Contents](#tableofcontents)
+- [Click to navigate back to the Table of Contents](#table-of-contents)
 
 ## Visuals
+
 ![Password Generator](./images/03-javascript-homework-demo.png)
 
-- [Click to return to Table of Contents](#tableofcontents)
+- [Click to navigate back to the Table of Contents](#table-of-contents)
 
 ## Resources
 - [Live Site](https://grilledcheeseplease.github.io/password-generator/)
 - [Repository](https://github.com/grilledcheeseplease/password-generator)
 
-- [Click to return to Table of Contents](#tableofcontents)
+
+- [Click to navigate back to the Table of Contents](#table-of-contents)
